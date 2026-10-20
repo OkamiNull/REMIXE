@@ -121,7 +121,7 @@
 
 .painSection {
   width: 100%;
-  background-color: #FAFAFA;
+  background-color: #4edea21a;
   padding: 8rem 2rem 10rem 2rem;
   display: flex;
   flex-direction: column;
@@ -162,8 +162,11 @@
 }
 
 .card {
-  background-color: #FFFFFF;
-  border: 1px solid #F1F5F9;
+  background: 
+    linear-gradient(#FFFFFF, #FFFFFF) padding-box, 
+    linear-gradient(270deg, #4EDEA3, #3B82F6) border-box;
+  
+  border: 1.5px solid transparent;
   border-radius: 16px;
   padding: 2.5rem;
   text-align: left;
@@ -172,8 +175,8 @@
 }
 
 .card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.06);
+  transform: translateY(-20px);
+  box-shadow: 0 15px 35px rgba(59, 130, 246, 0.12);
 }
 
 .iconRed, .iconOrange {
@@ -227,7 +230,7 @@
 
 .transformSection {
   width: 100%;
-  background-color: #FFFFFF;
+  background-color: #f2f6fdab;
   padding: 8rem 2rem;
   display: flex;
   flex-direction: column;
@@ -513,7 +516,7 @@
 
 .resultsSection {
   width: 100%;
-  background-color: #FAFAFA;
+  background-color: #3b83f61e;
   padding: 8rem 2rem;
   display: flex;
   flex-direction: column;
@@ -599,7 +602,7 @@
 
 .plansSection {
   width: 100%;
-  background-color: #FFFFFF;
+  background-color: #f2f6fdab;
   padding: 8rem 2rem 12rem 2rem;
   display: flex;
   flex-direction: column;

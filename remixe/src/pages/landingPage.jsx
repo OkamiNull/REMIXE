@@ -5,44 +5,44 @@ import Header from '../components/header.jsx';
 import Footer from '../components/footer.jsx';
 
 function LandingPage() {
-  return (
-    <main style={{ position: 'relative', width: '100%', minHeight: '100vh' }}>
-      <Header />
+	return (
+   	<main style={{ position: 'relative', width: '100%', minHeight: '100vh' }}>
+      	<Header />
 
-    <section 
+    	<section 
       className={styles.heroSection} 
       style={{ backgroundImage: `url(${remixAiImg})` }}
-    >
+    	>
       {/* Camada escura para garantir a leitura perfeita de todos os textos */}
-      <div className={styles.overlay}></div>
+      	<div className={styles.overlay}></div>
 
       {/* Container principal que fica por cima do fundo */}
-      <div className={styles.contentContainer}>
+      	<div className={styles.contentContainer}>
         
         {/* Textos da parte de cima */}
-        <div className={styles.topContent}>
+        	<div className={styles.topContent}>
           
-          <h1 className={styles.title}>
-            Acabe com o Desperdício em<br />
-            Treinamentos Corporativos em<br />
-            Tecnologia
-          </h1>
+         	<h1 className={styles.title}>
+            	Acabe com o Desperdício em<br />
+            	Treinamentos Corporativos em<br />
+            	Tecnologia
+          	</h1>
           
-          <p className={styles.subtitle}>
-            A plataforma B2B impulsionada por IA que transforma cursos obsoletos em jornadas hiper-personalizadas. Converta qualquer conteúdo em PDF, slides, gamificação ou videoaulas — adaptando-se a como cada colaborador aprende melhor.
-          </p>
+         	<p className={styles.subtitle}>
+            	A plataforma B2B impulsionada por IA que transforma cursos obsoletos em jornadas hiper-personalizadas. Converta qualquer conteúdo em PDF, slides, gamificação ou videoaulas — adaptando-se a como cada colaborador aprende melhor.
+         	</p>
           
-          <div className={styles.buttonGroup}>
-            <button className={styles.btnPrimary}>Agendar Demonstração</button>
-            <button className={styles.btnSecondary}>Conhecer a Plataforma</button>
-          </div>
-        </div>
+         	<div className={styles.buttonGroup}>
+            	<button className={styles.btnPrimary}>Agendar Demonstração</button>
+            	<button className={styles.btnSecondary}>Conhecer a Plataforma</button>
+          	</div>
+        	</div>
 
         {/* Textos da parte de baixo */}
-        <div className={styles.bottomContent}>
-          <p className={styles.overlaySubtitle}>EMPRESAS QUE ACELERAM O APRENDIZADO COM A REMIXE</p>
-          <h2 className={styles.overlayTitle}>Você</h2>
-        </div>
+        	<div className={styles.bottomContent}>
+          	<p className={styles.overlaySubtitle}>EMPRESAS QUE ACELERAM O APRENDIZADO COM A REMIXE</p>
+          	<h2 className={styles.overlayTitle}>Você</h2>
+        	</div>
 
       </div>
     </section>
