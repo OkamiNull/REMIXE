@@ -1,0 +1,782 @@
+.heroSection {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-color: #0f172a;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.65); 
+  z-index: 1;
+}
+
+.contentContainer {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  min-height: 85vh;
+  width: 100%;
+  padding: 6rem 1rem 2rem 1rem;
+}
+
+.topContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 800px;
+}
+
+.bottomContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+/* ESTILOS DOS TEXTOS E BOTÕES */
+
+.title {
+  font-size: 3.5rem;
+  line-height: 1.1;
+  color: #ffffff;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.03em;
+}
+
+.subtitle {
+  font-size: 1.125rem;
+  color: #D1D5DB;
+  line-height: 1.6;
+  max-width: 700px;
+  margin-bottom: 2.5rem;
+}
+
+.buttonGroup {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.btnPrimary {
+  background-color: #10B981;
+  color: #ffffff;
+  border: none;
+  padding: 0.875rem 1.75rem;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btnPrimary:hover {
+  background-color: #059669;
+}
+
+.btnSecondary {
+  background-color: transparent;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  padding: 0.875rem 1.75rem;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btnSecondary:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.overlaySubtitle {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+/* SEÇÃO: A DOR DO MERCADO */
+
+.painSection {
+  width: 100%;
+  background-color: #FAFAFA;
+  padding: 8rem 2rem 10rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.painHeader {
+  max-width: 900px;
+  margin-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.painTitle {
+  font-size: 2.5rem;
+  color: #0F172A;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.02em;
+}
+
+.painSubtitle {
+  font-size: 1rem;
+  color: #64748B;
+  line-height: 1.6;
+}
+
+/* Grid para os 3 cards */
+.cardsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  max-width: 1100px;
+  width: 100%;
+}
+
+.card {
+  background-color: #FFFFFF;
+  border: 1px solid #F1F5F9;
+  border-radius: 16px;
+  padding: 2.5rem;
+  text-align: left;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.06);
+}
+
+.iconRed, .iconOrange {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.iconRed {
+  background-color: #FEF2F2;
+  color: #EF4444;
+}
+
+.iconOrange {
+  background-color: #FFF7ED;
+  color: #F59E0B;
+}
+
+.cardHighlightRed {
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: #EF4444;
+  margin-bottom: 0.5rem;
+}
+
+.cardHighlightOrange {
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: #F59E0B;
+  margin-bottom: 0.5rem;
+}
+
+.cardTitle {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #0F172A;
+  margin-bottom: 1rem;
+}
+
+.cardText {
+  font-size: 0.95rem;
+  color: #64748B;
+  line-height: 1.6;
+}
+
+/* SEÇÃO: COMO A REMIXE TRANSFORMA */
+
+.transformSection {
+  width: 100%;
+  background-color: #FFFFFF;
+  padding: 8rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.transformHeader {
+  max-width: 900px;
+  margin-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.transformTitle {
+  font-size: 2.5rem;
+  color: #0F172A;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.02em;
+}
+
+.transformSubtitle {
+  font-size: 1rem;
+  color: #64748B;
+  line-height: 1.6;
+}
+
+/* Grid para os 4 cards em formato 2x2 */
+.transformGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  max-width: 1100px;
+  width: 100%;
+}
+
+.transformCard {
+  background-color: #F8FAFC;
+  border: 1px solid #E2E8F0;
+  border-radius: 16px;
+  padding: 2.5rem;
+  text-align: left;
+  transition: border-color 0.3s ease;
+}
+
+.transformCard:hover {
+  border-color: #CBD5E1;
+}
+
+/* Ícones azuis e verdes */
+.iconBlue, .iconGreen {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.iconBlue {
+  background-color: #EFF6FF;
+  color: #3B82F6;
+}
+
+.iconGreen {
+  background-color: #ECFDF5;
+  color: #10B981;
+}
+
+.transformCardTitle {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #0F172A;
+  margin-bottom: 1rem;
+}
+
+.transformCardText {
+  font-size: 0.95rem;
+  color: #64748B;
+  line-height: 1.6;
+}
+
+.mockupContainer {
+  width: 100%;
+  max-width: 1100px;
+  margin-top: 4rem;
+  background-color: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+.mockupHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid #F1F5F9;
+  background-color: #FAFAFA;
+}
+
+.mockupDots {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.dotRed, .dotYellow, .dotGreen {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+.dotRed { background-color: #EF4444; }
+.dotYellow { background-color: #FBBF24; }
+.dotGreen { background-color: #10B981; }
+
+.mockupUrl {
+  margin-left: 1rem;
+  font-size: 0.85rem;
+  color: #94A3B8;
+  font-family: monospace;
+}
+
+.mockupTabs {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.tab {
+  font-size: 0.8rem;
+  color: #64748B;
+  padding: 0.4rem 0.8rem;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.tabActive {
+  background-color: #10B981;
+  color: #FFFFFF;
+}
+
+.mockupBody {
+  display: flex;
+  padding: 1.5rem;
+  gap: 1.5rem;
+}
+
+/* LADO ESQUERDO: EDITOR DE CÓDIGO */
+.mockupCode {
+  flex: 1;
+  background-color: #FFFFFF;
+  border: 1px solid #F1F5F9;
+  border-radius: 12px;
+  padding: 1.5rem;
+  overflow-x: auto;
+}
+
+.mockupCode pre {
+  margin: 0;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.85rem;
+  line-height: 1.6;
+  color: #334155;
+}
+
+/* Cores da Sintaxe do Código */
+.codeComment { color: #94A3B8; font-style: italic; }
+.codeKeyword { color: #3B82F6; font-weight: 600; }
+.codeString { color: #10B981; }
+.codeFunction { color: #8B5CF6; font-weight: 600; }
+.codeNumber { color: #F59E0B; }
+
+/* LADO DIREITO: DASHBOARD DE STATUS */
+.mockupPanel {
+  flex: 1;
+  background-color: #FFFFFF;
+  border: 1px solid #F1F5F9;
+  border-radius: 12px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.panelHeader {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.panelStatusTitle {
+  font-size: 0.75rem;
+  font-weight: 800;
+  color: #10B981;
+  letter-spacing: 0.05em;
+}
+
+.panelStatusAdherence {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #3B82F6;
+}
+
+.panelTitle {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #0F172A;
+  margin-bottom: 0.5rem;
+}
+
+.panelDesc {
+  font-size: 0.9rem;
+  color: #64748B;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+
+/* Barra de Progresso */
+.progressContainer {
+  margin-bottom: 2rem;
+}
+
+.progressBarWrapper {
+  width: 100%;
+  height: 8px;
+  background-color: #F1F5F9;
+  border-radius: 10px;
+  margin-bottom: 0.5rem;
+  overflow: hidden;
+}
+
+.progressBar {
+  width: 95%;
+  height: 100%;
+  background: linear-gradient(90deg, #3B82F6, #10B981);
+  border-radius: 10px;
+}
+
+.progressLabels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.75rem;
+  color: #94A3B8;
+  font-weight: 600;
+}
+
+.labelGreen {
+  color: #10B981;
+}
+
+.panelFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.8rem;
+  color: #64748B;
+  border-top: 1px solid #F1F5F9;
+  padding-top: 1rem;
+}
+
+.dotGreenSmall {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background-color: #10B981;
+  border-radius: 50%;
+  margin-right: 0.4rem;
+}
+
+.version {
+  color: #94A3B8;
+  font-family: monospace;
+}
+
+/* SEÇÃO: RESULTADOS COMPROVADOS */
+
+.resultsSection {
+  width: 100%;
+  background-color: #FAFAFA;
+  padding: 8rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.resultsHeader {
+  max-width: 900px;
+  margin-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.resultsTitle {
+  font-size: 2.5rem;
+  color: #0F172A;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.02em;
+}
+
+.resultsSubtitle {
+  font-size: 1rem;
+  color: #64748B;
+  line-height: 1.6;
+}
+
+/* Grid com 4 colunas */
+.metricsGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.metricCard {
+  background-color: #FFFFFF;
+  border: 1px solid #F1F5F9;
+  border-radius: 16px;
+  padding: 2.5rem 1.5rem;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.metricCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.06);
+}
+
+.metricValueGreen {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #10B981;
+  margin-bottom: 0.5rem;
+}
+
+.metricValueBlue {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #3B82F6;
+  margin-bottom: 0.5rem;
+}
+
+.metricTitle {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #0F172A;
+  margin-bottom: 1rem;
+}
+
+.metricText {
+  font-size: 0.9rem;
+  color: #64748B;
+  line-height: 1.6;
+}
+
+/* SECÇÃO: PLANOS CORPORATIVOS */
+
+.plansSection {
+  width: 100%;
+  background-color: #FFFFFF;
+  padding: 8rem 2rem 12rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.plansHeader {
+  max-width: 900px;
+  margin-bottom: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.plansTitle {
+  font-size: 2.5rem;
+  color: #0F172A;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.02em;
+}
+
+.plansSubtitle {
+  font-size: 1rem;
+  color: #64748B;
+  line-height: 1.6;
+}
+
+/* Grelha de Planos */
+.plansGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  max-width: 1200px;
+  width: 100%;
+  align-items: stretch;
+}
+
+/* Estilo Base dos Cartões */
+.planCard {
+  background-color: #F8FAFC;
+  border: 1px solid #E2E8F0;
+  border-radius: 16px;
+  padding: 3rem 2rem;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+/* Estilo do Cartão em Destaque (Centro) */
+.planCardHighlighted {
+  background-color: #FFFFFF;
+  border: 2px solid #10B981;
+  box-shadow: 0 20px 40px rgba(16, 185, 129, 0.1);
+  transform: translateY(-15px);
+}
+
+.popularBadge {
+  position: absolute;
+  top: -14px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #10B981;
+  color: #FFFFFF;
+  font-size: 0.75rem;
+  font-weight: 800;
+  padding: 0.4rem 1rem;
+  border-radius: 50px;
+  letter-spacing: 0.05em;
+}
+
+/* Tipografia dos Planos */
+.planPreTitle {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #64748B;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.5rem;
+}
+
+.planPreTitleGreen {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #10B981;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.5rem;
+}
+
+.planPreTitleBlue {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #3B82F6;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.5rem;
+}
+
+.planName {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #0F172A;
+  margin-bottom: 1rem;
+}
+
+.planDesc {
+  font-size: 0.9rem;
+  color: #64748B;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+  min-height: 3rem;
+}
+
+/* Lista de Funcionalidades */
+.planFeatures {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 3rem 0;
+  flex-grow: 1;
+}
+
+.planFeatures li {
+  font-size: 0.9rem;
+  color: #334155;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  line-height: 1.4;
+}
+
+.checkGreen {
+  color: #10B981;
+  font-weight: 800;
+}
+
+.checkBlue {
+  color: #3B82F6;
+  font-weight: 800;
+}
+
+/* Botões dos Planos */
+.btnPlanOutline {
+  width: 100%;
+  background-color: transparent;
+  color: #0F172A;
+  border: 1px solid #CBD5E1;
+  padding: 1rem;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: auto;
+}
+
+.btnPlanOutline:hover {
+  border-color: #94A3B8;
+  background-color: #F1F5F9;
+}
+
+.btnPlanSolid {
+  width: 100%;
+  background-color: #10B981;
+  color: #FFFFFF;
+  border: none;
+  padding: 1rem;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: auto;
+}
+
+.btnPlanSolid:hover {
+  background-color: #059669;
+}
