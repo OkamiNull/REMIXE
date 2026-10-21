@@ -1,0 +1,368 @@
+.presentation{
+    width: 100%;
+    height: 1300px;
+    background-color: #F8FAFC;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.hero {
+    width: 90%;
+    height: 30%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;    
+
+    background-color: #FFFFFF;
+    border: 1px solid #E2E8F0;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.heroContent {
+    width: 50%;
+    height: 100%;
+
+    padding: 30px;
+    padding-right: 0%;
+
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.heroText{
+    width: 100%;
+    height: 90%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    gap: 20px;
+}
+
+.heroImage {
+    width: 50%;
+    height: 100%;
+    
+    
+}
+
+.heroImage img {
+    width: 100%;
+    height: 100%;
+}
+
+.heroTitle{
+    color:  #0F172A;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    
+}
+
+.heroDescription{
+    color:  #475569;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 20px;
+    max-width: 90%;
+}
+
+.ctaButton{
+    width: 20%;
+    height: 50px;
+
+    border-radius: 10px;
+    border: none;
+
+    background-color: #10B981;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+.ctaButtonText{
+    color:  #FFFFFF;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.courseStats{
+    width: 90%;
+    
+
+    
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.statValue{
+ font-size: 24px;
+ font-family: 'Plus Jakarta Sans', sans-serif;
+ color: #0F172A;
+
+ font-weight: bold;
+}
+
+.statLabel{
+    font-size: 18px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: #64748B;
+
+}
+
+.statBlock{
+    width: 32%;
+    height: 90px;
+
+    background-color: #FFFFFF;
+    border: 1px solid #E2E8F0;
+    border-radius: 20px;
+
+    padding: 30px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px; 
+}
+
+.statIcon{
+    width: 50px;
+    height: 50px;
+    border-radius: 10%;
+    background-color: #c3d9f9;
+
+    display: flex;
+    align-items: center;     
+    justify-content: center;
+}
+
+.statIcon img{
+    object-fit: cover;
+}
+
+
+.statText{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+.statIconGreen{
+    background-color: #c9fde5;
+}
+
+.statIconRed{
+    background-color: #f8aeae;
+}
+
+.courseContent{
+    width: 90%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.aboutCourse{
+    width: 48%;
+    height: 300px;
+
+    border: 1px solid #E2E8F0;
+
+    background-color: #FFFFFF;
+    border-radius: 15px;
+
+    padding: 20px;
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+
+
+}
+
+.aboutTop{
+    width: 35%;
+
+    margin-bottom: 20px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bookIcon{
+    width: 40px;
+    height: 40px;
+    border-radius: 10%;
+    background-color: #c9fde5;
+
+    display: flex;
+    align-items: center;     
+    justify-content: center;
+    
+}
+
+.aboutValue{
+    font-size: 24px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: #0F172A;
+
+    font-weight: bold;
+}
+
+.aboutLabel{
+    font-size: 18px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: #64748B;
+}
+
+.courseModules{
+    width: 48%;
+    height: 300px;
+
+    border: 1px solid #E2E8F0;
+
+    background-color: #FFFFFF;
+    border-radius: 15px;
+
+    padding: 20px;
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    gap: 20px;
+
+}
+
+.modulesText{
+    width: 25%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.folderIcon{
+    width: 40px;
+    height: 40px;
+    border-radius: 10%;
+    background-color: #c9fde5;
+
+    display: flex;
+    align-items: center;     
+    justify-content: center;
+}
+
+.folderValue{
+    font-size: 24px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: #0F172A;
+
+    font-weight: bold;
+}
+
+.moduleCounter{
+    width: 100px;
+    height: 25px;
+
+    border-radius: 10px;
+
+    background-color: #F1F5F9;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.moduleCount{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 18px;
+    color: #475569;
+}
+
+.modulesTop{
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.moduleBox{
+    width: 80%;
+    height: 90px;
+
+    border: 1px solid #E2E8F0;
+    border-radius: 15px;
+
+    padding: 20px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+    gap: 30px;
+}
+
+.moduleFrame{
+    width: 40px;
+    height: 40px;
+    border-radius: 15%;
+    background-color: #c9fde5;
+
+    display: flex;
+    align-items: center;     
+    justify-content: center;
+}
+
+.moduleNumber{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 18px;
+    color: #047857;
+    font-weight: bold;
+}
+
+.moduleTitle{
+    font-size: 24px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: #0F172A;
+
+    font-weight: bold;
+}
+
+.moduleSubtitle{
+    font-size: 18px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: #64748B;
+}
