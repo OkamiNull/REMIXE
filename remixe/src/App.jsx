@@ -1,5 +1,5 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
 import './App.css'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Presentation from './pages/presentation.jsx'
 import LandingPage from './pages/landingPage.jsx'
 import SelecaoCurso from './pages/selecaoCurso.jsx'
