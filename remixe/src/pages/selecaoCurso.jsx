@@ -1,4 +1,4 @@
-import React { useState } from 'react';
+import { useState } from 'react';
 import styles from '../components/css/selecaoCurso.module.css';
 import Header from '../components/header.jsx';
 import Footer from '../components/footer.jsx';
