@@ -1,22 +1,21 @@
 .header{
     width: 90%;
     height: 65px;
-
     background-color: #FFFFFF;
-
     border: 1px solid #E2E8F0;
     border-radius: 35px;
-
-    padding: 20px;
-    padding-left: 40px;
-
+    padding: 0 40px;
+    box-sizing: border-box;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
 }
 
 .brandContainer{
@@ -35,15 +34,13 @@
     font-weight: 700;
 }
 
-.navbar{
-    width: 35%;
-
+.navbar {
+    width: auto;
     list-style: none;
-    
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    gap: 2rem;
 }
 
 .navbar a{
