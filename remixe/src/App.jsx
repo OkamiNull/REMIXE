@@ -1,7 +1,11 @@
 import './App.css'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Presentation from './pages/presentation.jsx'
 import LandingPage from './pages/landingPage.jsx'
+import Presentation from './pages/presentation.jsx'
+import Informacoes from './pages/informacoes.jsx'
+import Modulo from './pages/modulo.jsx'
+import Edicao from './pages/edicao.jsx'
+import Finalizacao from './pages/finalizacao.jsx'
 import Course from './pages/course.jsx'
 import SelecaoCurso from './pages/selecaoCurso.jsx'
 
@@ -16,6 +20,10 @@ function App() {
         <Route path="/presentation" element={<Presentation />} />
         <Route path="/course" element={<Course />} />
         <Route path="/selecaoCurso" element={<SelecaoCurso />} />
+        <Route path="/Modulo" element={<Modulo />} />
+        <Route path="/Informacoes" element={<Informacoes />} />
+        <Route path="/Edicao" element={<Edicao />} />
+        <Route path="/Finalizacao" element={<Finalizacao />} />
       </Routes>
     </BrowserRouter>
     </main>
