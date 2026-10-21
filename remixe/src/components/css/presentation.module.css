@@ -3,6 +3,8 @@
     height: 1300px;
     background-color: #F8FAFC;
 
+    margin-top: 90px;
+
     display: flex;
     flex-direction: column;
     align-items: center;
