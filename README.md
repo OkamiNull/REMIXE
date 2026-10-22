@@ -1,2 +1,0 @@
-# REMIXE
-Projeto de DEMODAY, REMIXE
