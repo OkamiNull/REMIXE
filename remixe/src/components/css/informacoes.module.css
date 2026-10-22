@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+*{
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #64748B;
+}
+
+.texto_preto{
+    color: black;
+}
+
+.fundao{
+    background-color: #F1F5F9;
+}
+
+.fundao .fundo{
+    width: 90%;
+    height: 100%;
+    margin: auto;
+}
+
+.fundao .fundo .header_separacao{
+    width: 100%;
+    height: 110px;
+}
+
+.fundao .conteudo .titulo_curso{
+    width: 10.5%;
+    margin-left: 0.3%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.fundao .conteudo .titulo_curso .seta{
+    width: 10%;
+}
+
+.fundao .fundo .conteudo .etapas{
+    width: 100%;
+    height: 100px;
+    border: 1px solid #E2E8F0;
+    border-radius: 15px;
+    margin-top: 1.2%;
+    background-color: white;
+    display: flex;
+}
+
+.fundao .fundo .conteudo .etapas .etapas_ajuste{
+    width: 70%;
+    height: 40%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.fundao .fundo .conteudo .etapas .etapas_ajuste .circulo{
+    width: 3.4%;
+    height: 100%;
+    border: 1px solid black;
+    background-color: #F1F5F9;
+    border-radius: 100%;
+    padding-top: 0.7%;
+    padding-left: 1.19%;
+}
+
+.fundao .fundo .conteudo .etapas .etapas_ajuste .circulo_verde{
+    width: 3.4%;
+    height: 100%;
+    background-color: #10B981;
+    border: 1px solid black;
+    border-radius: 100%;
+    color: white;
+    padding-top: 0.7%;
+    padding-left: 1.25%;
+}
+
+.fundao .fundo .conteudo .etapas .etapas_ajuste .linha1{
+    width: 30%;
+    height: 2px;
+    margin-top: 1.55%;
+    background-color: #10B981;
+}
+
+.fundao .fundo .conteudo .etapas .etapas_ajuste .linha2{
+    width: 30%;
+    height: 2px;
+    margin-top: 1.55%;
+    background-color: black;
+}
+
+.fundao .fundo .conteudo .etapas .etapas_ajuste p{
+    margin-top: 0.7%;
+}
+
+.fundao .fundo .conteudo .dados_curso{
+    width: 100%;
+    height: 620px;
+    border: 1px solid #E2E8F0;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    margin-top: 2%;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.fundao .fundo .conteudo .dados_curso .dados_caixa1{
+    width: 55%;
+    height: 100%;
+    display: flex;
+}
+
+.fundao .fundo .conteudo .dados_curso .dados_caixa1 .ajuste_caixa1{
+    width: 90%;
+    height: 90%;
+    margin: auto;
+}
+
+.fundao .fundo .conteudo .dados_curso .dados_caixa1 .ajuste_caixa1 .input_subdescricao{
+    width: 100%;
+    height: 10%;
+    border: 1px solid #CBD5E1;
+    border-radius: 15px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding-left: 1%;
+}
+
+.fundao .fundo .conteudo .dados_curso .dados_caixa1 .ajuste_caixa1 .input_subdescricao:focus{
+    outline: none;
+    border-color: #10B981;
+}
+
+.fundao .fundo .conteudo .dados_curso .dados_caixa1 .ajuste_caixa1 .editor {
+    width: 100%;
+    border-radius: 15px;
+    border: 1px solid #CBD5E1;
+    overflow: hidden;
+    background-color: #FFFFFF;
+    box-sizing: border-box;
+    margin-top: 2%;
+}
+
+.fundao .fundo .conteudo .dados_curso .dados_caixa1 .ajuste_caixa1 .barra_ferramentas {
+    height: 64px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding: 0 24px;
+    background-color: #F8FAFC;
+    border-bottom: 1px solid #CBD5E1;
+}
+
+
+.fundao .fundo .conteudo .dados_curso .dados_caixa1 .ajuste_caixa1 .barra_ferramentas button {
+    border: none;
+    background: transparent;
+    color: #64748B;
+    font-family: inherit;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.fundao .fundo .conteudo .dados_curso .dados_caixa1 .ajuste_caixa1 .barra_ferramentas button:hover {
+    color: #10B981;
+}
+
+.fundao .fundo .conteudo .dados_curso .dados_caixa1 .ajuste_caixa1 .divisor {
+    height: 24px;
+    width: 1px;
+    background-color: #CBD5E1;
+}
+
+.fundao .fundo .conteudo .dados_curso .dados_caixa1 .ajuste_caixa1 .editor textarea {
+    display: block;
+    width: 100%;
+    height: 235px;
+    box-sizing: border-box;
+    outline: none;
+    resize: vertical;
+    font-family: inherit;
+    line-height: 1.4;
+    color: #334155;
+    padding: 1%;
+    
+}
+
+.fundao .fundo .conteudo .dados_curso .dados_caixa1 .ajuste_caixa1.editor textarea::placeholder {
+    color: #94A3B8;
+    opacity: 1;
+}
+
+.fundao .fundo .conteudo .dados_curso .dados_caixa1 .ajuste_caixa1.editor textarea:focus {
+    border-color: #10B981;
+}
+
+.fundao .fundo .conteudo .dados_curso .dados_caixa2{
+    width: 45%;
+    height: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.fundao .fundo .conteudo .dados_curso .dados_caixa2 .titulo_caixa2{
+    width: 25%;
+    height: 6%;
+    display: flex;
+}
+
+.fundao .fundo .conteudo .dados_curso .dados_caixa2 .titulo_caixa2 .verde_caixa2{
+    width: 6%;
+    height: 30px;
+    border-radius: 15px;
+    background-color: #10B981;
+}
+
+.fundao .fundo .conteudo .dados_curso .dados_caixa2 .titulo_caixa2 p{
+    font-size: 20px;
+    margin-left: 8%;
+    margin-top: 1.5%;
+    color: black;
+}
+
+.fundao .fundo .conteudo .dados_curso .dados_caixa2 .linha_fina{
+   width: 95%;
+   height: 0.2px;
+   border: 1px solid #f3f8ff;
+   margin-top: 1%;
+}
+
+.fundao .fundo .conteudo .dados_curso .dados_caixa2 .foto{
+   width: 95%;
+   height: 95%;
+   background-color: #c2f5e4;
+   border-radius: 15px;
+   margin-top: 3%;
+}
+
+.fundao .fundo .conteudo .finalizacao{
+    width: 100%;
+    height: 90px;
+    border: 1px solid #E2E8F0;
+    border-end-end-radius: 15px;
+    border-end-start-radius: 15px;
+    display: flex;
+    background-color: #F9FBFD;
+}
+
+.fundao .fundo .conteudo .finalizacao .ajuste{
+    width: 95%;
+    height: 60%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+
+}
+
+.fundao .fundo .conteudo .finalizacao .ajuste .botao_voltar{
+    width: 15%;
+    height: 75%;
+    margin: auto 0;
+    border: 1px solid #E2E8F0;
+    border-radius: 15px;
+    text-decoration: none;
+    display: inline-block;
+    padding-top: 0.5%;
+    padding-left: 0.5%;
+    color: black;
+    background-color: white;
+    
+}
+
+.fundao .fundo .conteudo .finalizacao .ajuste .botao_avancar{
+    width: 8%;
+    height: 90%;
+    margin: auto 0;
+    border-radius: 15px;
+    text-decoration: none;
+    display: inline-block;
+    padding-top: 0.8%;
+    padding-left: 1.6%;
+    color: white;
+    background-color: #10B981;
+}
