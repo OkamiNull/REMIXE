@@ -2,6 +2,7 @@ import Styles from '../components/css/informacoes.module.css'
 import Header from '../components/header'
 import Footer from '../components/footer'
 import Seta from '../assets/seta.png'
+import { Link } from 'react-router-dom'
 
 function Informacoes(){
     return(
@@ -82,8 +83,8 @@ function Informacoes(){
                     </div>
                     <div className={Styles.finalizacao}>
                         <div className={Styles.ajuste}>
-                            <a href="" className={Styles.botao_voltar}>Voltar para a página anterior</a>
-                            <a href="" className={Styles.botao_avancar}>Avançar ➔</a>
+                             <Link to="/creator" className={Styles.botao_voltar}>Voltar para a página anterior</Link>
+                             <Link to="/Modulo" className={Styles.botao_avancar}>Avançar ➔</Link>
                         </div>
                     </div>
                 </div>

@@ -1,5 +1,6 @@
 import Style from "../components/css/creator.module.css";
 import notebook from "../assets/image 16.png";
+import { Link } from "react-router-dom";
 
 
 import coverHardware from "../assets/thumb1.png";
@@ -29,7 +30,7 @@ function Creator() {
             Inteligência artificial.
           </p>
 
-          <a href="" className={Style.ctaButton}> Criar novo curso </a>
+          <Link to="/Informacoes" className={Style.ctaButton}> Criar novo curso </Link>
         </div>
 
         <img src={notebook} alt="" className={Style.notebook} />
@@ -64,7 +65,7 @@ function Creator() {
                   <div className={Style.progressFill} style={{ width: "75%" }} />
                 </div>
                 <div className={Style.courseActions}>
-                  <a href="" className={Style.editButton}>Editar curso</a>
+                   <Link to="/Edicao" className={Style.editButton}>Editar curso</Link>
                   <button type="button" className={Style.deleteButton} aria-label="Excluir curso"><img src={trash} alt="" /></button>
                 </div>
               </div>
@@ -85,7 +86,7 @@ function Creator() {
                   <div className={Style.progressFill} style={{ width: "100%" }} />
                 </div>
                 <div className={Style.courseActions}>
-                  <a href="" className={Style.editButton}>Editar curso</a>
+                   <Link to="/Edicao" className={Style.editButton}>Editar curso</Link>
                   <button type="button" className={Style.deleteButton} aria-label="Excluir curso"><img src={trash} alt="" /></button>
                 </div>
               </div>
@@ -106,7 +107,7 @@ function Creator() {
                   <div className={Style.progressFill} style={{ width: "60%" }} />
                 </div>
                 <div className={Style.courseActions}>
-                  <a href="" className={Style.editButton}>Editar curso</a>
+                   <Link to="/Edicao" className={Style.editButton}>Editar curso</Link>
                   <button type="button" className={Style.deleteButton} aria-label="Excluir curso"><img src={trash} alt="" /></button>
                 </div>
               </div>
@@ -147,7 +148,7 @@ function Creator() {
                   <div className={Style.progressFill} style={{ width: "0%" }} />
                 </div>
                 <div className={Style.courseActions}>
-                  <a href="" className={Style.editButton}>Editar curso</a>
+                   <Link to="/Edicao" className={Style.editButton}>Editar curso</Link>
                   <button type="button" className={Style.deleteButton} aria-label="Excluir curso"><img src={trash} alt="" /></button>
                 </div>
               </div>
@@ -167,7 +168,7 @@ function Creator() {
                   <div className={Style.progressFill} style={{ width: "0%" }} />
                 </div>
                 <div className={Style.courseActions}>
-                  <a href="" className={Style.editButton}>Editar curso</a>
+                  <Link to="/Edicao" className={Style.editButton}>Editar curso</Link>
                   <button type="button" className={Style.deleteButton} aria-label="Excluir curso"><img src={trash} alt="" /></button>
                 </div>
               </div>
@@ -187,7 +188,7 @@ function Creator() {
                   <div className={Style.progressFill} style={{ width: "0%" }} />
                 </div>
                 <div className={Style.courseActions}>
-                  <a href="" className={Style.editButton}>Editar curso</a>
+                  <Link to="/Edicao" className={Style.editButton}>Editar curso</Link>
                   <button type="button" className={Style.deleteButton} aria-label="Excluir curso"><img src={trash} alt="" /></button>
                 </div>
               </div>

@@ -2,6 +2,7 @@ import Styles from '../components/css/modulo.module.css'
 import Header from '../components/header'
 import Footer from '../components/footer'
 import Seta from '../assets/seta.png'
+import { Link } from 'react-router-dom'
 
 function Modulo(){
     return(
@@ -59,8 +60,8 @@ function Modulo(){
                     </div>
                     <div className={Styles.finalizacao}>
                         <div className={Styles.ajuste}>
-                            <a href="" className={Styles.botao_voltar}>Voltar para a página anterior</a>
-                            <a href="" className={Styles.botao_avancar}>Avançar ➔</a>
+                            <Link to="/Informacoes" className={Styles.botao_voltar}>Voltar para a página anterior</Link>
+                            <Link to="/Finalizacao" className={Styles.botao_avancar}>Avançar ➔</Link>
                         </div>
                     </div>
                 </div>
