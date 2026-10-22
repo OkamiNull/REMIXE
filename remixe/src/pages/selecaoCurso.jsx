@@ -8,6 +8,7 @@ import PythonBasico from '../assets/pythonBasico.png';
 import JavaScript from '../assets/javaScript.png';
 import ReactImg from '../assets/react.png';
 import GitHub from '../assets/gitHub.png';
+import { Link } from 'react-router-dom';
 
 function SelecaoCurso() {
   const [modalidade, setModalidade] = useState('revisao');
@@ -107,7 +108,7 @@ function SelecaoCurso() {
 
             <div className={styles.actionRow}>
               <button type="button" className={styles.btnContinue}>
-                Continuar aula
+                <Link to="/course">Continuar aula</Link>
               </button>
             </div>
 
@@ -148,7 +149,7 @@ function SelecaoCurso() {
                   <div className={styles.cardProgressFill} style={{ width: '75%' }}></div>
                 </div>
                 <button type="button" className={styles.btnAccessCourse}>
-                  Acessar Curso <span>↗</span>
+                  <Link to="/course">Acessar Curso</Link>
                 </button>
               </div>
             </div>
@@ -170,7 +171,7 @@ function SelecaoCurso() {
                   <div className={styles.cardProgressFill} style={{ width: '100%' }}></div>
                 </div>
                 <button type="button" className={styles.btnAccessCourse}>
-                  Acessar Curso <span>↗</span>
+                  <Link to="/course">Acessar Curso</Link>
                 </button>
               </div>
             </div>
@@ -192,7 +193,7 @@ function SelecaoCurso() {
                   <div className={styles.cardProgressFill} style={{ width: '50%' }}></div>
                 </div>
                 <button type="button" className={styles.btnAccessCourse}>
-                  Acessar Curso <span>↗</span>
+                  <Link to="/course">Acessar Curso</Link>
                 </button>
               </div>
             </div>
@@ -234,7 +235,7 @@ function SelecaoCurso() {
                   <span className={styles.circleEmpty}></span> 0% Iniciado
                 </div>
                 <button type="button" className={styles.btnAccessCourse}>
-                  Começar Curso <span>↗</span>
+                  <Link to="/course">Acessar Curso</Link>
                 </button>
               </div>
             </div>
@@ -252,7 +253,7 @@ function SelecaoCurso() {
                   <span className={styles.circleEmpty}></span> 0% Iniciado
                 </div>
                 <button type="button" className={styles.btnAccessCourse}>
-                  Começar Curso <span>↗</span>
+                  <Link to="/course">Acessar Curso</Link>
                 </button>
               </div>
             </div>
@@ -270,7 +271,7 @@ function SelecaoCurso() {
                   <span className={styles.circleEmpty}></span> 0% Iniciado
                 </div>
                 <button type="button" className={styles.btnAccessCourse}>
-                  Começar Curso <span>↗</span>
+                  <Link to="/course">Acessar Curso</Link>
                 </button>
               </div>
             </div>

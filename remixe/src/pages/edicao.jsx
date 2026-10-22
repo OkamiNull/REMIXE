@@ -7,6 +7,7 @@ import documento from '../assets/documento.svg'
 import foto from '../assets/foto.svg'
 import seta_youtube from '../assets/seta_youtube.svg'
 import yes from '../assets/yes.svg'
+import { Link } from 'react-router-dom'
 
 function Edicao(){
     return(
@@ -107,8 +108,8 @@ function Edicao(){
                     </div>
                     <div className={Styles.finalizacao}>
                         <div className={Styles.ajuste}>
-                            <a href="" className={Styles.botao_voltar}>Voltar para a página anterior</a>
-                            <a href="" className={Styles.botao_avancar}>Avançar ➔</a>
+                            <Link to="/Informacoes" className={Styles.botao_voltar}>Voltar para a página anterior</Link>
+                            <Link to="/Finalizacao" className={Styles.botao_avancar}>Avançar ➔</Link>
                         </div>
                     </div>
                 </div>

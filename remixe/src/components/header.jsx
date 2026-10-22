@@ -1,5 +1,6 @@
 import Style from '../components/css/header.module.css'
 import logo from '../assets/REMIXE Logo.png'
+import { Link } from "react-router-dom";
 
 function Header() { 
     return (
@@ -11,12 +12,12 @@ function Header() {
 
             <ul className={Style.navbar}>
                 <li><a href="#">O Problema</a></li>
-                <li><a href="#">Como Funciona</a></li>
+                <li><Link to="/creatorPainel">Como Funciona</Link></li>
                 <li><a href="#">Impacto & IA</a></li>
                 <li><a href="#">Planos</a></li>
             </ul>
 
-            <button className={Style.loginButton}>Login</button>
+            <button className={Style.loginButton}><Link to="/selecaoCurso">Login</Link></button>
 
 
         </header>
