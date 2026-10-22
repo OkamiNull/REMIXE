@@ -1,8 +1,7 @@
-import { useState } from 'react';
 import styles from '../components/css/selecaoCurso.module.css';
 import Header from '../components/header.jsx';
 import Footer from '../components/footer.jsx';
-
+import { useState } from "react";
 import devImage from '../assets/devImg.png';
 import DesenvolvimentoWeb from '../assets/desenvolvimentoWeb.png';
 import PythonBasico from '../assets/pythonBasico.png';

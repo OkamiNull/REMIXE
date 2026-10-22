@@ -8,6 +8,7 @@ import Edicao from './pages/edicao.jsx'
 import Finalizacao from './pages/finalizacao.jsx'
 import Course from './pages/course.jsx'
 import SelecaoCurso from './pages/selecaoCurso.jsx'
+import Creator from './pages/creator.jsx';
 
 
 function App() {
@@ -18,8 +19,9 @@ function App() {
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/presentation" element={<Presentation />} />
-        <Route path="/course" element={<Course />} />
         <Route path="/selecaoCurso" element={<SelecaoCurso />} />
+        <Route path="/course" element={<Course />} />
+        <Route path="/creatorPainel" element={<Creator />} />
         <Route path="/Modulo" element={<Modulo />} />
         <Route path="/Informacoes" element={<Informacoes />} />
         <Route path="/Edicao" element={<Edicao />} />
