@@ -2,9 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 *{
-    font-family: 'Inter', sans-serif;
-    font-size: 16px;
-    font-weight: 600;
+   
 }
 
 .texto_preto{
@@ -14,6 +12,9 @@
 .fundao{
     background-color: #F1F5F9;
     color: #64748B;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
 }
 
 .fundao .fundo{
