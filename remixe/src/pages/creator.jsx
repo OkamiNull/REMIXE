@@ -42,7 +42,7 @@ function Creator() {
       <section className={Style.courseSection}>
         <div className={Style.sectionHeader}>
           <h2 className={`${Style.sectionTitle} ${Style.sectionTitleGreen}`}>Seus cursos</h2>
-          <a href="" className={Style.seeAll}>Ver todos →</a>
+          <a href="" className={Style.seeAll}>Ver todos</a>
         </div>
 
         <div className={Style.carousel}>
@@ -195,12 +195,12 @@ function Creator() {
                 </div>
               </div>
             </article>
-
+            
           </div>
-
-            <button type="button" className={Style.sideArrowRight}>
+          <button type="button" className={Style.sideArrowRight}>
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
-            </button>
+          </button>
+            
         </div>
       </section>
     </div>
