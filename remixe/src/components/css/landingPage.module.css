@@ -121,7 +121,7 @@
 
 .painSection {
   width: 100%;
-  background-color: #FAFAFA;
+  background-color: #4edea21c;
   padding: 8rem 2rem 10rem 2rem;
   display: flex;
   flex-direction: column;
@@ -513,7 +513,7 @@
 
 .resultsSection {
   width: 100%;
-  background-color: #FAFAFA;
+  background-color: #3b83f618;
   padding: 8rem 2rem;
   display: flex;
   flex-direction: column;

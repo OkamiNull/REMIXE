@@ -7,7 +7,7 @@ function Header() {
         <header className={Style.header}>
             <div className={Style.brandContainer}>
             <img src={logo} alt="REMIXE Logo" />
-            <p className={Style.brand}>REMIXE</p>
+            <p className={Style.brand}><Link to="/">REMIXE</Link></p>
             </div>
 
             <ul className={Style.navbar}>

@@ -1,6 +1,7 @@
 import Style from "../components/css/creator.module.css";
 import notebook from "../assets/image 16.png";
 import { Link } from "react-router-dom";
+import Header from "../components/header";
 
 
 import coverHardware from "../assets/thumb1.png";
@@ -15,6 +16,7 @@ import trash from "../assets/trash.svg";
 function Creator() {
   return (
     <div className={Style.creatorPage}>
+      <Header/>
       <section className={Style.heroBox}>
         <div className={Style.heroText}>
           <span className={Style.heroBadge}>PAINEL DE GESTÃO EDUCACIONAL • REMIXE</span>
