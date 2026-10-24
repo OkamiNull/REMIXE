@@ -9,6 +9,7 @@ import Finalizacao from './pages/finalizacao.jsx'
 import Course from './pages/course.jsx'
 import SelecaoCurso from './pages/selecaoCurso.jsx'
 import Creator from './pages/creator.jsx';
+import ColabLogin from "./pages/colabLogin.jsx";
 
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
         <Route path="/Modulo" element={<Modulo />} />
         <Route path="/Edicao" element={<Edicao />} />
         <Route path="/Finalizacao" element={<Finalizacao />} />
+         <Route path="/Login-collab" element={<ColabLogin />} />
       </Routes>
     </BrowserRouter>
     </main>

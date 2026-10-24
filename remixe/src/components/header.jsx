@@ -17,7 +17,7 @@ function Header() {
                 <li><a href="#">Planos</a></li>
             </ul>
 
-            <button className={Style.loginButton}><Link to="/selecaoCurso">Login</Link></button>
+            <button className={Style.loginButton}><Link to="/Login-collab">Login</Link></button>
 
 
         </header>
