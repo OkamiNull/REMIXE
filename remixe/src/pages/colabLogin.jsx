@@ -17,15 +17,11 @@ function ColabLogin() {
         
                 <nav className={Style.navHeader}>
                     <div className={Style.seletorPortais}>
-                        <Link to="/" className={Style.navitemAtivo}>Portal do Colaborador</Link>
+                        <Link to="/Login-collab" className={Style.navitemAtivo}>Portal do Colaborador</Link>
                     </div>
-                    <Link to="/" className={Style.navItem}>Portal da Empresa</Link>
+                    <Link to="/Login-gestor" className={Style.navItem}>Portal da Empresa</Link>
                 </nav>
         
-                <div className={Style.suporte}>
-                    <img className={Style.iconeSuporte} src={iconeSuporte} alt="" />
-                    <p className={Style.textoSuporte}>Suporte</p>
-                </div>
             </header>
  
             <div className={Style.content}>
@@ -91,7 +87,7 @@ function ColabLogin() {
                         <span aria-hidden="true">G</span> Google Workspace
                         </button>
                         <button type="button" className={Style.azureLogin}>
-                        <span aria-hidden="true">🪟</span> Azure AD / Okta
+                        Azure AD / Okta
                         </button>
                     </div>
             
@@ -106,7 +102,6 @@ function ColabLogin() {
                             E-mail corporativo institucional
                         </label>
                         <div className={Style.formularioInput}>
-                            <span className={Style.iconeInput} aria-hidden="true">✉️</span>
                             <input
                             id="email"
                             type="email"
@@ -123,7 +118,6 @@ function ColabLogin() {
                             Senha de acesso
                         </label>
                         <div className={Style.formularioInput}>
-                            <span className={Style.iconeInput} aria-hidden="true">🔒</span>
                             <input
                             id="senha"
                             type="password"

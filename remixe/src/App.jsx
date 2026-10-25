@@ -10,6 +10,7 @@ import Course from './pages/course.jsx'
 import SelecaoCurso from './pages/selecaoCurso.jsx'
 import Creator from './pages/creator.jsx';
 import ColabLogin from "./pages/colabLogin.jsx";
+import GestorLogin from './pages/gestorLogin.jsx';
 
 
 function App() {
@@ -19,6 +20,8 @@ function App() {
       <BrowserRouter>
       <Routes>
         <Route path="/" element={<LandingPage />} />
+        <Route path="/Login-collab" element={<ColabLogin />} />
+        <Route path="/Login-gestor" element={<GestorLogin />} />
         <Route path="/selecaoCurso" element={<SelecaoCurso />} />
         <Route path="/presentation" element={<Presentation />} />
         <Route path="/course" element={<Course />} />
@@ -27,7 +30,6 @@ function App() {
         <Route path="/Modulo" element={<Modulo />} />
         <Route path="/Edicao" element={<Edicao />} />
         <Route path="/Finalizacao" element={<Finalizacao />} />
-         <Route path="/Login-collab" element={<ColabLogin />} />
       </Routes>
     </BrowserRouter>
     </main>
