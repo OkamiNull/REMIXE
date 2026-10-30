@@ -1,125 +1,52 @@
-.loginCompanyPage{
-   
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "inter", sans-serif;
+.loginCompanyPage {
+    width: 100%;
+    min-height: 100%;
     background-color: #f8fafc;
     color: #0f172a;
+    margin: 0;
+    padding: 0;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
-    align-items: center;
+    justify-content: space-between;
 }
 
-.header {
+/* evita que inputs/cards estourem a largura por causa de padding e borda */
+.loginCompanyPage,
+.loginCompanyPage *,
+.loginCompanyPage *::before,
+.loginCompanyPage *::after {
+    box-sizing: border-box;
+}
+
+/* ===== LAYOUT PRINCIPAL ===== */
+.principal {
     width: 100%;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 48px;
-    background-color: #ffffff;
-    border-bottom: 1px solid #e2e8f0;
-    height: 65px;
-}
-
-.headerMarca {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-}
-
-.logo{
-    font-family: "Plus Jakarta Sans", sans-serif;
-    font-size: 1.25rem;
-    font-weight: 600;
-    letter-spacing: 0.5px;
-    color: #0f172a;
-}
-
-.logoimg{
-    height: 40px;
-    width: auto;
-}
-
-.seletorPortais {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-}
-
-.navHeader {
-    display: flex;
-    align-items: center;
-    background-color: #f1f5f9;
-    padding: 4px;
-    border-radius: 9999px;
-    gap: 4px;
-}
-
-.navHeader nav {
-    display: flex;
-}
-
-.navHeader a {
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: 500;
-    padding: 6px 16px;
-    border-radius: 9999px;
-    transition: all 0.2s ease;
-}
-
-.navHeader .navItem {
-    color: #64748b;
-}
-
-.navHeader .navitemAtivo {
-    background-color: #0d9488; 
-    color: #ffffff;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-}
-
-.suporte {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    cursor: pointer;
-}
-
-.iconeSuporte {
-    height: 27px;
-    width: 27px;
-    border-radius: 50%;
-}
-
-.textoSuporte {
-    font-size: 18px;
-    font-weight: 500;
-    color: #334155;
-}
-
-
-.principal {
-    display: grid;
-    grid-template-columns: 1fr 880px;
-    gap: 98px;
-    max-width: 1400px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    padding: 0 40px;
-    align-items: start;
-    flex: 1;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: clamp(32px, 6vw, 130px);
+    padding: 25px;
 }
 
 .conteudoEsquerda {
     display: flex;
     flex-direction: column;
+    width: 50%;
+    min-width: 0;
     gap: 24px;
 }
 
+.conteudoDireita {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    min-width: 0;
+}
+
 .tituloPrincipal {
-    font-size: 56px;
+    font-family: var(--font-brand);
+    font-size: clamp(32px, 4.5vw, 56px);
     font-weight: bold;
     line-height: 1.15;
     color: #0f172a;
@@ -130,21 +57,24 @@
 }
 
 .textoVerde {
-    color: #10B981;
+    color: #00b87c;
+    font-weight: 600;
 }
 
 .descricaoPrincipal {
-    font-size: 18px;
+    font-size: clamp(16px, 1.6vw, 18px);
     color: #475569;
     line-height: 1.5;
     max-width: 600px;
 }
 
+/* ===== VITRINE ===== */
 .cartaoVitrine {
+    width: 100%;
     background-color: #ffffff;
     border: 1px solid #e2e8f0;
     border-radius: 16px;
-    padding: 24px;
+    padding: 14px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.03);
     display: flex;
     flex-direction: column;
@@ -168,16 +98,18 @@
 .verde { background-color: #10b981; }
 
 .vitrineGrid {
+    width: 100%;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 12px;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 10px;
 }
 
 .blocoMetrica {
+    width: 100%;
     background-color: #f8fafc;
     border: 1px solid #e2e8f0;
     border-radius: 12px;
-    padding: 16px;
+    padding: 12px;
     display: flex;
     flex-direction: column;
     gap: 8px;
@@ -190,11 +122,11 @@
     font-size: 14px;
     font-weight: 700;
     color: #64748b;
-    letter-spacing: 0.5px;
+    letter-spacing: 1px;
 }
 
 .metricaValor {
-    font-size: 28px;
+    font-size: clamp(22px, 2.4vw, 28px);
     font-weight: 800;
     color: #0f172a;
 }
@@ -208,11 +140,6 @@
     color: #64748b;
 }
 
-.textoVerde {
-    color: #00b87c;
-    font-weight: 600;
-}
-
 .vitrineBarra {
     background-color: #f8fafc;
     border: 1px solid #e2e8f0;
@@ -220,6 +147,7 @@
     padding: 14px 16px;
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     gap: 12px;
 }
 
@@ -231,11 +159,12 @@
     display: flex;
     flex-direction: column;
     gap: 2px;
-    flex: 1;
+    flex: 1 1 220px;
+    min-width: 0;
 }
 
 .barraInfo strong {
-    font-size: 18px;
+    font-size: clamp(15px, 1.6vw, 18px);
     color: #0f172a;
 }
 
@@ -246,6 +175,7 @@
 
 .barraTags {
     display: flex;
+    flex-wrap: wrap;
     gap: 6px;
 }
 
@@ -257,6 +187,7 @@
     border-radius: 6px;
     color: #475569;
     font-weight: 500;
+    white-space: nowrap;
 }
 
 .textoConfiado {
@@ -267,20 +198,18 @@
     justify-content: center;
 }
 
-.conteudoDireita {
-    display: flex;
-    justify-content: center;
-}
-
+/* ===== CARD DE LOGIN ===== */
 .cartaoLogin {
     background-color: #ffffff;
     border: 1px solid #e2e8f0;
+    min-height: 670px;
     border-radius: 16px;
-    padding: 22px;
+    padding: 20px;
     width: 100%;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     gap: 16px;
 }
 
@@ -288,65 +217,39 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.badgeCinza {
-    background-color: #f1f5f9;
-    color: #475569;
-    font-size: 12px;
-    font-weight: 700;
-    padding: 4px 8px;
-    border-radius: 4px;
+    flex-wrap: wrap;
+    gap: 6px;
 }
 
 .textoPequenoCinza {
-    font-size: 10px;
+    font-size: 12px;
     color: #94a3b8;
     font-weight: 600;
 }
 
 .loginTitulo {
-    font-size: 30px;
+    font-size: clamp(30px, 4vw, 55px);
     font-weight: 750;
     color: #0f172a;
+    line-height: 1.15;
 }
 
 .loginSubtitulo {
-    font-size: 15px;
+    font-size: clamp(16px, 1.6vw, 20px);
     color: #64748b;
     line-height: 1.4;
     margin-bottom: 4px;
-}
-
-.botaoSso {
-    background-color: #f8fafc;
-    border: 1px solid #e2e8f0;
-    border-radius: 8px;
-    padding: 10px 14px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    cursor: pointer;
-    font-size: 15px;
-    font-weight: 600;
-    color: #334155;
-}
-
-.tagSso {
-    font-size: 12px;
-    color: #64748b;
-    font-weight: 500;
 }
 
 .divisorLinha {
     display: flex;
     align-items: center;
     text-align: center;
-    margin: 4px 0;
+    margin: 2px 0;
 }
 
-.divisorLinha::before, .divisorLinha::after {
+.divisorLinha::before,
+.divisorLinha::after {
     content: '';
     flex: 1;
     border-bottom: 1px solid #e2e8f0;
@@ -354,20 +257,26 @@
 
 .divisorLinha span {
     padding: 0 10px;
-    font-size: 11px;
+    font-size: 12px;
     font-weight: 700;
     color: #94a3b8;
     letter-spacing: 0.5px;
 }
 
+.loginForm {
+    display: flex;
+    flex-direction: column;
+}
+
 .grupoInput {
     display: flex;
     flex-direction: column;
-    gap: 6px;
+    gap: 8px; /* label -> input do mesmo campo */
+    margin-bottom: 28px; /* input -> label do campo seguinte */
 }
 
 .grupoInput label {
-    font-size: 14px;
+    font-size: clamp(16px, 1.6vw, 20px);
     font-weight: 600;
     color: #334155;
 }
@@ -376,6 +285,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 6px 12px;
 }
 
 .labelComLink a {
@@ -393,10 +304,10 @@
 
 .inputComIcone input {
     width: 100%;
-    padding: 10px 12px 10px 34px;
+    padding: 10px;
     border: 1px solid #cbd5e1;
     border-radius: 6px;
-    font-size: 13px;
+    font-size: 16px;
     color: #0f172a;
     outline: none;
     background-color: #ffffff;
@@ -429,6 +340,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 6px 12px;
     font-size: 13px;
     margin: 2px 0;
 }
@@ -460,67 +373,64 @@
     margin-top: 4px;
 }
 
-.loginRodapeLinks {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    border-top: 1px solid #f1f5f9;
-    padding-top: 16px;
-    margin-top: 4px;
-    font-size: 12px;
-    color: #64748b;
+/* ===== RESPONSIVO ===== */
+
+/* telas grandes: recupera o respiro lateral das métricas */
+@media (min-width: 1280px) {
+    .blocoMetrica {
+        padding-right: 90px;
+    }
 }
 
-.linkLinha1 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+/* tablet e abaixo: empilha as colunas */
+@media (max-width: 1024px) {
+    .principal {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 40px;
+    }
+
+    .conteudoEsquerda,
+    .conteudoDireita {
+        width: 100%;
+    }
+
+    .descricaoPrincipal {
+        max-width: none;
+    }
+
+    .cartaoLogin {
+        min-height: 0;
+        max-width: 640px;
+    }
 }
 
-.linkVerde {
-    color: #00b87c;
-    text-decoration: none;
-    font-weight: 600;
-}
+/* celular */
+@media (max-width: 600px) {
+    .principal {
+        padding: 16px;
+        gap: 32px;
+    }
 
-.linkLinha2 {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-}
+    .conteudoEsquerda {
+        gap: 18px;
+    }
 
-.linkAzul {
-    color: #2563eb;
-    text-decoration: none;
-    font-weight: 700;
-    margin-left: auto;
-}
+    .vitrineGrid {
+        grid-template-columns: 1fr;
+    }
 
-.rodapeInferior {
-    width: 100%;
-    background-color: #0b0f19;
-    color: #94a3b8;
-    padding: 24px 40px;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    margin-top: auto;
-    border-bottom: 4px solid #2563eb;
-}
+    .vitrineBarra {
+        padding: 12px;
+    }
 
-.rodapeConteudo {
-    display: flex;
-    justify-content: space-between;
-    font-size: 13px;
-}
+    .cartaoLogin {
+        max-width: none;
+        padding: 16px;
+    }
 
-.rodapeLinks {
-    display: flex;
-    gap: 24px;
-    font-size: 13px;
-}
-
-.rodapeLinks a {
-    color: #94a3b8;
-    text-decoration: none;
+    .loginTopoInfo {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }

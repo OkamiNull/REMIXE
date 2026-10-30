@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200..800&family=Outfit:wght@100..900&display=swap');
+
 .colabLogingPage{
     background-color: #f8fafc;
     color: #0f172a;
@@ -7,123 +9,34 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "inter", sans-serif;
-}
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 48px;
-    background-color: #ffffff;
-    border-bottom: 1px solid #e2e8f0;
-    height: 65px;
 }
 
-.headerMarca {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-}
-
-.logo{
-    font-family: "Plus Jakarta Sans", sans-serif;
-    font-weight: 600;
-}
-
-.logoimg{
-    height: 40px;
-    width: auto;
-}
-
-.seletorPortais {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-}
-
-.header img {
-    height: 32px;
-    width: auto;
-    border-radius: 6px;
-}
-
-.header h1 {
- 
-    font-weight: 800;
-    letter-spacing: 0.5px;
-    color: #0f172a;
-}
-
-.navHeader {
-    display: flex;
-    align-items: center;
-    background-color: #f1f5f9;
-    padding: 4px;
-    border-radius: 9999px;
-    gap: 4px;
-}
-
-.navHeader nav {
-    display: flex;
-}
-
-.navHeader a {
-    text-decoration: none;
-    font-size: 20px;
-    font-weight: 500;
-    padding: 6px 16px;
-    border-radius: 9999px;
-    transition: all 0.2s ease;
-}
-
-.navHeader .navItem {
-    color: #64748b;
-}
-
-.navHeader .navitemAtivo {
-    background-color: #0d9488; 
-    color: #ffffff;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-}
-
-.suporte {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    cursor: pointer;
-}
-
-.iconeSuporte {
-    height: 27px;
-    width: 27px;
-    border-radius: 50%;
-}
-
-.textoSuporte {
-    font-size: 18px;
-    font-weight: 500;
-    color: #334155;
-}
 
 .content {
-    display: grid;
-    grid-template-columns: 1fr 880px; 
-    gap: 50px;
-    max-width: 1900px;
-    margin: 30px;
-    padding: 0 32px;
-    align-items: start;
-    flex: 1;
+    display: flex;
+    width: 100%;
+    gap: 70px;
+    padding: 30px;
+    align-items: flex-start;
+    justify-content: flex-start;
 }
 
-.secaoPrincipal {
-    margin-top: 32px;
+.secaoPrincipal{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.textRemixe{
+    width: 100%;
 }
 
 
 .tituloPrincipal {
-    font-family: "Plus Jakarta Sans", sans-serif;
-    font-size: 60px;
+    font-family: var(--font-brand);
+    font-size: 50px;
     font-weight:bolder;
 }
 
@@ -131,14 +44,14 @@
     background: linear-gradient(to right, #059669, #2563EB);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 60px;
+    font-size: 50px;
 }
 
 .destaqueTitulo2 {
     background: linear-gradient(to right, #2563EB, #059669);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 60px;
+    font-size: 50px;
 }
 
 .subtituloPrincipal {
@@ -156,8 +69,11 @@
 .cardsExemplo {
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    max-width: 540px;
+    gap: 15px;
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #FFFFFF;
 }
 
 .navExemplo {
@@ -174,7 +90,7 @@
     border: none;
     padding: 8px 16px;
     border-radius: 9999px;
-    font-size: 1.0rem;
+    font-size: 0.9rem;
     font-weight: 600;
     cursor: pointer;
 }
@@ -185,7 +101,7 @@
     border: none;
     padding: 8px 16px;
     border-radius: 9999px;
-    font-size: 1.0rem;
+    font-size: 0.9rem;
     font-weight: 500;
     cursor: pointer;
     text-decoration: none;
@@ -204,7 +120,7 @@
 }
 
 .metricaValidacao {
-    font-size: 25px;
+    font-size: 15px;
     font-weight: 700;
     color: #64748b;
     letter-spacing: 0.5px;
@@ -212,14 +128,14 @@
 }
 
 .valorMetrica {
-    font-size: 2.25rem;
+    font-size: 1.65rem;
     font-weight: 600;
     color: #0f172a;
     margin-bottom: 4px;
 }
 
 .descricaoMetrica {
-    font-size: 20px;
+    font-size: 15px;
     color: #64748b;
 }
 
@@ -260,11 +176,7 @@
     color: #64748b;
 }
 
-.secaoLogin {
-    width: 100%;
-    grid-column: 2;
-    grid-row: 1 / span 2;
-}
+
 
 .cardLogin {
     background-color: #ffffff;
@@ -272,9 +184,7 @@
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
     border: 1px solid #e2e8f0;
     border-top: 5px solid #0d9488;
-    padding: 48px 32px;          
-    min-height: 700px;           
-    margin-top: 34px;
+    padding: 28px 22px;                     
 }
 
 .portalTitulo {

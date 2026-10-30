@@ -11,6 +11,7 @@ import SelecaoCurso from './pages/selecaoCurso.jsx'
 import Creator from './pages/creator.jsx';
 import ColabLogin from "./pages/colabLogin.jsx";
 import GestorLogin from './pages/gestorLogin.jsx';
+import RegisterCompany from './pages/cadastroEmpresa.jsx';
 
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
         <Route path="/Modulo" element={<Modulo />} />
         <Route path="/Edicao" element={<Edicao />} />
         <Route path="/Finalizacao" element={<Finalizacao />} />
+        <Route path="/CadastroEmpresa" element={<RegisterCompany />} />
       </Routes>
     </BrowserRouter>
     </main>

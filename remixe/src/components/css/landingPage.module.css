@@ -54,6 +54,7 @@
 /* ESTILOS DOS TEXTOS E BOTÕES */
 
 .title {
+    font-family: var(--font-brand);
   font-size: 3.5rem;
   line-height: 1.1;
   color: #ffffff;

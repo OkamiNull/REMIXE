@@ -1,0 +1,67 @@
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 48px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #e2e8f0;
+    height: 65px;
+}
+
+.headerMarca {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo{
+    font-family: var(--font-brand);
+    font-size: 1.25rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    color: #0f172a;
+}
+
+.logoimg{
+    height: 40px;
+    width: auto;
+}
+
+.seletorPortais {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.navHeader {
+    display: flex;
+    align-items: center;
+    background-color: #f1f5f9;
+    padding: 4px;
+    border-radius: 9999px;
+    gap: 4px;
+}
+
+.navHeader nav {
+    display: flex;
+}
+
+.navHeader a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 6px 16px;
+    border-radius: 9999px;
+    transition: all 0.2s ease;
+}
+
+.navHeader .navItem {
+    color: #64748b;
+}
+
+.navHeader .navitemAtivo {
+    background-color: #0d9488; 
+    color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}

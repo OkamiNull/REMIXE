@@ -1,72 +1,64 @@
 import Style from "../components/css/colabLogin.module.css";
 import { Link } from "react-router-dom";
-import logo from "../assets/Remixe_icon.png";
-import iconeSuporte from "../assets/icone-suporte.png";
+
 import background from "../assets/Background.png";
 import iconePortal from "../assets/icone-portal.png";
+import LoginHeader from "../components/loginHeader";
+import FooterLogin from "../components/loginFooter";
  
 
 function ColabLogin() {
     return(
         <div className={Style.colabLogingPage}>
-            <header className={Style.header}>
-                <div className={Style.headerMarca}>
-                    <img className={Style.logoimg} src={logo} alt="Logo REMIXE" />
-                    <span className={Style.logo}>REMIXE</span>
-                </div>
-        
-                <nav className={Style.navHeader}>
-                    <div className={Style.seletorPortais}>
-                        <Link to="/Login-collab" className={Style.navitemAtivo}>Portal do Colaborador</Link>
-                    </div>
-                    <Link to="/Login-gestor" className={Style.navItem}>Portal da Empresa</Link>
-                </nav>
-        
-            </header>
+            <LoginHeader/>
  
             <div className={Style.content}>
                 <section className={Style.secaoPrincipal}>
-                    <p className={Style.tituloPrincipal}>
-                        Sua jornada técnica <br />
-                        adaptativa{" "}
-                    <span className={Style.destaqueTitulo}>molda-se a</span>
-                    <span className={Style.destaqueTitulo2}>o seu raciocínio.</span>
-                    </p>
-                    <p className={Style.subtituloPrincipal}>
-                        A atmosfera de aprendizagem que converte qualquer conteúdo em tempo <br />
-                        real:{" "}
-                    <span className={Style.destaqueSubtitulo}>
-                        alterne entre Slides, Vídeos Gerativos, <br />
-                        Desafios Gamificados ou PDFs.
-                </span>
-                </p>
+                    <div className={Style.textRemixe}>
+                        <p className={Style.tituloPrincipal}>
+                            Sua jornada técnica <br />
+                            adaptativa{" "}
+                        <span className={Style.destaqueTitulo}>molda-se a</span>
+                        <span className={Style.destaqueTitulo2}>o seu raciocínio.</span>
+                        </p>
+                        <p className={Style.subtituloPrincipal}>
+                            A atmosfera de aprendizagem que converte qualquer conteúdo em tempo <br />
+                            real:{" "}
+                        <span className={Style.destaqueSubtitulo}>
+                            alterne entre Slides, Vídeos Gerativos, <br />
+                            Desafios Gamificados ou PDFs.
+                        </span>
+                        </p>
+                    </div>
+
+                    <section className={Style.cardsExemplo}>
+                        <div className={Style.navExemplo}>
+                        <button type="button" className={Style.navitemAtivo}>PDF</button>
+                        <button type="button" className={Style.navItem}>Vídeo Gerativo</button>
+                        <button type="button" className={Style.navItem}>Slides Interativos</button>
+                        <button type="button" className={Style.navItem}>Gamificação</button>
+                        </div>
+                
+                        <div className={Style.cardMetrica}>
+                        <p className={Style.metricaValidacao}>SEQUÊNCIA ATUAL</p>
+                        <p className={Style.valorMetrica}>94.8%</p>
+                        <p className={Style.descricaoMetrica}>Índice de Retenção Ativa</p>
+                        </div>
+                
+                        <div className={Style.retornoPai}>
+                        <div className={Style.imgIA}>
+                            <img src={background} alt="Símbolo de IA" />
+                        </div>
+                        <div className={Style.retornoFilho}>
+                            <p className={Style.retornoSucesso}>Módulo Re-mixado com Sucesso!</p>
+                            <p className={Style.descricaoRetorno}>1 hora de vídeo-aula → Manual de 30 páginas</p>
+                        </div>
+                        </div>
+                    </section>
                 </section>
             
                 
-                <section className={Style.cardsExemplo}>
-                    <div className={Style.navExemplo}>
-                    <button type="button" className={Style.navitemAtivo}>PDF</button>
-                    <button type="button" className={Style.navItem}>Vídeo Gerativo</button>
-                    <button type="button" className={Style.navItem}>Slides Interativos</button>
-                    <button type="button" className={Style.navItem}>Gamificação</button>
-                    </div>
-            
-                    <div className={Style.cardMetrica}>
-                    <p className={Style.metricaValidacao}>SEQUÊNCIA ATUAL</p>
-                    <p className={Style.valorMetrica}>94.8%</p>
-                    <p className={Style.descricaoMetrica}>Índice de Retenção Ativa</p>
-                    </div>
-            
-                    <div className={Style.retornoPai}>
-                    <div className={Style.imgIA}>
-                        <img src={background} alt="Símbolo de IA" />
-                    </div>
-                    <div className={Style.retornoFilho}>
-                        <p className={Style.retornoSucesso}>Módulo Re-mixado com Sucesso!</p>
-                        <p className={Style.descricaoRetorno}>1 hora de vídeo-aula → Manual de 30 páginas</p>
-                    </div>
-                    </div>
-                </section>
+                
             
                 
                 <section className={Style.secaoLogin}>
@@ -142,19 +134,11 @@ function ColabLogin() {
                         Acessar Plataforma &rarr;
                         </button>
                     </form>
-            
-                    <div className={Style.cardRodape}>
-                        <Link to="/contato-gestor">É gestor de RH, DPO ou Tech Lead?</Link>
-                        <Link to="/">Portal da Empresa &nearr;</Link>
-                    </div>
-            
                     </div>
                 </section>
             
-                <footer className={Style.footer}>
-                    <Link to="/politica-de-seguranca">Política de Segurança da Informação</Link>
-                </footer>
             </div>
+            <FooterLogin/>
         </div>
     )
 }

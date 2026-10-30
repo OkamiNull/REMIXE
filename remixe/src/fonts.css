@@ -1,0 +1,45 @@
+/* ==========================================================================
+   Sistema tipográfico REMIXE
+   (baseado no relatório "Arquitetura Tipográfica Estratégica")
+
+   Plus Jakarta Sans -> 100% da interface (UI/UX): painéis, menus, cards,
+                        formulários, botões, tabelas
+   Outfit            -> só marca: wordmark "REMIXE", H1 gigantes de
+                        marketing, landing pages de conversão e banners
+   Lexend            -> modo de leitura focada (acessibilidade), opcional
+
+   As fontes são carregadas no index.html (tags <link> do Google Fonts).
+   Nos módulos CSS NÃO se declara font-family para texto comum: ele herda
+   do body. Só se usa var(--font-brand) ou var(--font-reading) nos casos
+   acima.
+   ========================================================================== */
+
+:root {
+  --font-ui: 'Plus Jakarta Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-brand: 'Outfit', var(--font-ui);
+  --font-lexend: 'Lexend', var(--font-ui);
+
+  /* texto de leitura (conteúdo da aula): igual à UI, a menos que o aluno
+     ative o modo Lexend */
+  --font-reading: var(--font-ui);
+}
+
+/* Modo leitura focada: para ligar, basta
+   document.documentElement.dataset.readingFont = "lexend"
+   e para desligar, delete document.documentElement.dataset.readingFont */
+:root[data-reading-font="lexend"] {
+  --font-reading: var(--font-lexend);
+}
+
+body {
+  font-family: var(--font-ui);
+}
+
+/* button, input, select e textarea NÃO herdam a fonte por padrão do
+   navegador. Sem esta regra, ficariam na fonte do sistema. */
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+}

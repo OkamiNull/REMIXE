@@ -1,31 +1,17 @@
-import { Link } from "react-router-dom";
+
 import Style from "../components/css/loginCompany.module.css";
+import { Link } from "react-router-dom";
+import FooterLogin from "../components/loginFooter";
+import LoginHeader from "../components/loginHeader";
 
-
-import logo from "../assets/Remixe_icon.png";
-import iconeSuporte from "../assets/icone-suporte.png";
 
 
 function GestorLogin() {
   return (
     <div className={Style.loginCompanyPage}>
 
-  
-      <header className={Style.header}>
-        <div className={Style.headerMarca}>
-          <img className={Style.logoimg} src={logo} alt="Logo REMIXE" />
-          <span className={Style.logo}>REMIXE</span>
-        </div>
-
-        <nav className={Style.navHeader}>
-          <div className={Style.seletorPortais}>
-            <Link to="/Login-collab" className={Style.navItem}>Portal do Colaborador</Link>
-          </div>
-          <Link to="/Login-gestor" className={Style.navitemAtivo}>Portal da Empresa</Link>
-        </nav>
-
-        
-      </header>
+    <LoginHeader/>
+      
 
     
       <div className={Style.principal}>
@@ -56,7 +42,6 @@ function GestorLogin() {
               <div className={Style.blocoMetrica}>
                 <div className={Style.metricaCabecalho}>
                   <span>ROI</span>
-                  <span className={Style.iconeSeta} aria-hidden="true">↗</span>
                 </div>
                 <div className={Style.metricaValor}>Garantido</div>
               </div>
@@ -64,7 +49,6 @@ function GestorLogin() {
               <div className={Style.blocoMetrica}>
                 <div className={Style.metricaCabecalho}>
                   <span>RETENÇÃO ATIVA</span>
-                  <span className={Style.iconeGrafico} aria-hidden="true">📊</span>
                 </div>
                 <div className={Style.metricaValor}>94.2%</div>
                 <div className={Style.metricaRodape}>
@@ -75,7 +59,6 @@ function GestorLogin() {
               <div className={Style.blocoMetrica}>
                 <div className={Style.metricaCabecalho}>
                   <span>PREDIÇÃO DE EVASÃO</span>
-                  <span className={Style.iconeRede} aria-hidden="true">⚡</span>
                 </div>
                 <div className={`${Style.metricaValor} ${Style.textoVerdeEscuro}`}>Ativa</div>
                 <div className={Style.metricaRodape}>
@@ -85,7 +68,7 @@ function GestorLogin() {
             </div>
 
             <div className={Style.vitrineBarra}>
-              <div className={Style.barraIcone} aria-hidden="true">⚙️</div>
+              <div className={Style.barraIcone} aria-hidden="true"></div>
               <div className={Style.barraInfo}>
                 <strong>Transformação Dinâmica de Formato</strong>
                 <span>Conteúdo inexcedível para garantir o bom desempenho.</span>
@@ -102,7 +85,7 @@ function GestorLogin() {
         <section className={Style.conteudoDireita}>
           <div className={Style.cartaoLogin}>
             <div className={Style.loginTopoInfo}>
-              <span className={Style.badgeCinza}>⚙️ CONSOLE ADMINISTRATIVO B2B</span>
+              <span className={Style.badgeCinza}>CONSOLE ADMINISTRATIVO B2B</span>
               <span className={Style.textoPequenoCinza}>ID: REM-CORP-SYS</span>
             </div>
 
@@ -111,17 +94,14 @@ function GestorLogin() {
               Gerencie trilhas, métricas de evasão e licenças corporativas da REMIXE.
             </p>
 
-            <button type="button" className={Style.botaoSso}>
-              <span>Entrar via SSO Corporativo</span>
-              <span className={Style.tagSso}>SAML / OKTA / AZURE AD</span>
-            </button>
+           
 
             <div className={Style.divisorLinha}>
-              <span>OU AUTENTICAÇÃO DIRETA</span>
+              <span>LOGIN</span>
             </div>
 
            
-            <form onSubmit={(e) => e.preventDefault()}>
+            <form className="Style.loginForm" onSubmit={(e) => e.preventDefault()}>
               <div className={Style.grupoInput}>
                 <label htmlFor="dominio">Domínio ou Subdomínio Corporativo</label>
                 <div className={Style.inputComIcone}>
@@ -157,7 +137,7 @@ function GestorLogin() {
                     required
                   />
               
-                  <button type="button" className={Style.sufixoOlho} aria-label="Mostrar senha">👁️</button>
+                  <button type="button" className={Style.sufixoOlho} aria-label="Mostrar senha"></button>
                 </div>
               </div>
 
@@ -165,7 +145,7 @@ function GestorLogin() {
                 <label className={Style.checkLabel}>
                   <input type="checkbox" defaultChecked /> Manter conectado por 30 dias
                 </label>
-                <span className={Style.badgeVerdeClaro}>🛡️ MFA Enforced</span>
+                <span className={Style.badgeVerdeClaro}>MFA Enforced</span>
               </div>
 
               <button type="submit" className={Style.botaoEntrar}>
@@ -175,30 +155,15 @@ function GestorLogin() {
 
             <div className={Style.loginRodapeLinks}>
               <div className={Style.linkLinha1}>
-                <span>Sua empresa ainda não tem conta?</span>
-                <Link to="/cadastro-empresa" className={Style.linkVerde}>Cadastrar Empresa →</Link>
-              </div>
-              <div className={Style.linkLinha2}>
-                <span className={Style.iconeAluno} aria-hidden="true">👤</span>
-                <span>Você é aluno/colaborador?</span>
-                <Link to="/login" className={Style.linkAzul}>ACESSE O PORTAL DO ALUNO →</Link>
+                <span>Sua empresa ainda não tem conta? </span>
+                <Link to="/CadastroEmpresa" className={Style.linkVerde}>Cadastrar Empresa</Link>
               </div>
             </div>
           </div>
         </section>
       </div>
 
-      <footer className={Style.rodapeInferior}>
-        <div className={Style.rodapeConteudo}>
-          <span>REMIXE Technologies Inc.</span>
-          <span>© 2026 Plataforma de Aprendizagem Técnica Corporativa</span>
-        </div>
-        <div className={Style.rodapeLinks}>
-          <Link to="/privacidade">Privacidade de Dados LGPD/GDPR</Link>
-          <Link to="/termos">Termos de Serviço Corporativo</Link>
-          <Link to="/status">Status da Infraestrutura</Link>
-        </div>
-      </footer>
+     <FooterLogin/>
 
     </div>
   );

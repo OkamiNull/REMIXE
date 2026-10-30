@@ -64,7 +64,6 @@
 
 .heroTitle{
     color:  #0F172A;
-    font-family: 'Plus Jakarta Sans', sans-serif;
     font-size: 30px;
     font-weight: 700;
     
@@ -72,7 +71,6 @@
 
 .heroDescription{
     color:  #475569;
-    font-family: 'Plus Jakarta Sans', sans-serif;
     font-size: 20px;
     max-width: 90%;
 }
@@ -97,7 +95,6 @@ a{
 
 .ctaButtonText{
     color:  #FFFFFF;
-    font-family: 'Plus Jakarta Sans', sans-serif;
     font-size: 20px;
     font-weight: 700;
 }
@@ -116,7 +113,6 @@ a{
 
 .statValue{
  font-size: 24px;
- font-family: 'Plus Jakarta Sans', sans-serif;
  color: #0F172A;
 
  font-weight: bold;
@@ -124,7 +120,6 @@ a{
 
 .statLabel{
     font-size: 18px;
-    font-family: 'Plus Jakarta Sans', sans-serif;
     color: #64748B;
 
 }
@@ -231,7 +226,6 @@ a{
 
 .aboutValue{
     font-size: 24px;
-    font-family: 'Plus Jakarta Sans', sans-serif;
     color: #0F172A;
 
     font-weight: bold;
@@ -239,7 +233,6 @@ a{
 
 .aboutLabel{
     font-size: 18px;
-    font-family: 'Plus Jakarta Sans', sans-serif;
     color: #64748B;
 }
 
@@ -286,7 +279,6 @@ a{
 
 .folderValue{
     font-size: 24px;
-    font-family: 'Plus Jakarta Sans', sans-serif;
     color: #0F172A;
 
     font-weight: bold;
@@ -306,7 +298,6 @@ a{
 }
 
 .moduleCount{
-    font-family: 'Plus Jakarta Sans', sans-serif;
     font-size: 18px;
     color: #475569;
 }
@@ -349,7 +340,6 @@ a{
 }
 
 .moduleNumber{
-    font-family: 'Plus Jakarta Sans', sans-serif;
     font-size: 18px;
     color: #047857;
     font-weight: bold;
@@ -357,7 +347,6 @@ a{
 
 .moduleTitle{
     font-size: 24px;
-    font-family: 'Plus Jakarta Sans', sans-serif;
     color: #0F172A;
 
     font-weight: bold;
@@ -365,6 +354,5 @@ a{
 
 .moduleSubtitle{
     font-size: 18px;
-    font-family: 'Plus Jakarta Sans', sans-serif;
     color: #64748B;
 }

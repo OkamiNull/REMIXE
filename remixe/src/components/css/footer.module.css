@@ -3,6 +3,7 @@
     height: 300px;
 
     background-color: #4edea21c;
+    margin: auto;
 
     display: flex;
     flex-direction: row;
@@ -51,14 +52,13 @@
 }
 
 .brand{
-    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-family: var(--font-brand);
     font-size: 20px;
     color: #0F172A;
     font-weight: 700;
 }
 
 .frase{
-    font-family: 'Plus Jakarta Sans', sans-serif;
     font-size: 12px;
     color: #64748B;
 
@@ -99,7 +99,6 @@
 
 .copyright{
     
-    font-family: 'Inter', sans-serif;
     font-size: 12px;
     color: #64748B;
 }
@@ -124,7 +123,6 @@
 }
 
 .footerTitle{
-    font-family: 'Plus Jakarta Sans', sans-serif;
     font-size: 16px;
     color: #0F172A;
 
@@ -145,7 +143,6 @@
     text-decoration: none;
     color: inherit;
 
-    font-family: 'Inter', sans-serif;
     font-size: 16px;
     color: #475569c3;
 
