@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200..800&family=Outfit:wght@100..900&display=swap');
+
+.colabLogingPage{
+    background-color: #f8fafc;
+    color: #0f172a;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.content {
+    display: flex;
+    width: 100%;
+    gap: 70px;
+    padding: 30px;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.secaoPrincipal{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.textRemixe{
+    width: 100%;
+}
+
+
+.tituloPrincipal {
+    font-family: var(--font-brand);
+    font-size: 50px;
+    font-weight:bolder;
+}
+
+.destaqueTitulo {
+    background: linear-gradient(to right, #059669, #2563EB);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 50px;
+}
+
+.destaqueTitulo2 {
+    background: linear-gradient(to right, #2563EB, #059669);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 50px;
+}
+
+.subtituloPrincipal {
+    color: #000000;
+    font-size: 20px;
+    margin-top: 16px;
+}
+
+.destaqueSubtitulo {
+    color: #3B82F6;
+    font-size: 20px;
+    
+}
+
+.cardsExemplo {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+}
+
+.navExemplo {
+    display: flex;
+    background-color: #f1f5f9;
+    border-radius: 9999px;
+    width: fit-content;
+    margin-bottom: 10px;
+}
+
+.navExemplo .navitemAtivo {
+    background-color: #0d9488;
+    color: #ffffff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 9999px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.navExemplo .navItem {
+    background: transparent;
+    color: #64748b;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 9999px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.navExemplo .navItem:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.cardMetrica {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.02);
+}
+
+.metricaValidacao {
+    font-size: 15px;
+    font-weight: 700;
+    color: #64748b;
+    letter-spacing: 0.5px;
+    margin-bottom: 8px;
+}
+
+.valorMetrica {
+    font-size: 1.65rem;
+    font-weight: 600;
+    color: #0f172a;
+    margin-bottom: 4px;
+}
+
+.descricaoMetrica {
+    font-size: 15px;
+    color: #64748b;
+}
+
+.retornoPai {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 16px;
+    display: flex;
+    gap: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
+}
+
+.imgIA {
+    height: 18px;
+    width: auto;
+    margin-bottom: 4px;
+    float: left;
+}
+
+.retornoFilho{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4px;
+    margin-left: 8px;
+
+}
+
+.sucessoRetorno {
+    font-size: 22px;
+    font-weight: bold;
+    color: #0f172a;
+}
+
+.descricaoRetorno {
+    font-size: 20px;
+    color: #64748b;
+}
+
+
+
+.cardLogin {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e2e8f0;
+    border-top: 5px solid #0d9488;
+    padding: 28px 22px;                     
+}
+
+.portalTitulo {
+    position: relative;
+    background-color: #F8FAFC;
+    width: 260px;
+    border: 1px solid #E2E8F0;
+    padding: 4px;
+    border-radius: 15px 15px;
+    margin-bottom: 24px;
+    display: flex;
+    justify-content:space-around;
+}
+
+.iconePortal{
+    height: 22px;
+    width: 22px;
+}
+
+.textoPortal{
+    font-size: 20px;
+    font-weight: 600;
+    color: #334155;
+    align-self: center;
+}
+.loginTitulo {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 8px;
+}
+
+.loginSubtitulo {
+    font-size: 0.95rem;
+    color: #64748b;
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+.loginRapido {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.googleLogin, .azureLogin {
+    background-color: #ffffff;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #334155;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: background-color 0.2s;
+}
+
+.googleLogin:hover, .azureLogin:hover {
+    background-color: #f8fafc;
+}
+
+.loginAdicional {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.loginAdicional::before, .loginAdicional::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.loginAdicional span {
+    padding: 0 10px;
+    font-size: 1.0rem;
+    font-weight: 700;
+    color: #94a3b8;
+    letter-spacing: 0.5px;
+}
+
+.grupoFormulario {
+    margin-bottom: 16px;
+    font-size: 1.5rem;
+}
+
+.labelFormulario {
+    display: block;
+    font-size: 1.0rem;
+    font-weight: 500;
+    color: #334155;
+    margin-bottom: 6px;
+}
+
+.formularioInput {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.formInput {
+    width: 100%;
+    padding: 10px 12px 10px 38px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 1.5rem;
+    color: #0f172a;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.formInput:focus {
+    border-color: #0d9488;
+    box-shadow: 0 0 0 3px rgba(13, 148, 136, 0.1);
+}
+
+.iconeInput {
+    position: absolute;
+    left: 12px;
+    color: #94a3b8;
+    font-size: 1.5rem;
+}
+
+.formBanco {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+    font-size: 1.5rem;
+}
+
+.formMemoria {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #475569;
+    cursor: pointer;
+}
+
+.senhaEsquecida {
+    color: #0d9488;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.senhaEsquecida:hover {
+    text-decoration: underline;
+}
+
+.acessarPlataforma {
+    width: 100%;
+    background-color: #0d9488;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    padding: 12px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    margin-bottom: 20px;
+}
+
+.acessarPlataforma:hover {
+    background-color: #0f766e;
+}
+
+.cardRodape {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.0rem;
+    color: #64748b;
+    border-top: 1px solid #f1f5f9;
+    padding-top: 16px;
+}
+
+.cardRodape a {
+    color: #64748b;
+    text-decoration: none;
+}
+
+.cardRodape a:hover {
+    color: #0d9488;
+    text-decoration: underline;
+}
+
+.footer {
+    width: 175%;
+    font-size: 0.8rem;
+}
+
+.footer a {
+    color: #64748b;
+    text-decoration: none;
+    display: flex;
+    justify-content:right;
+
+    
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
