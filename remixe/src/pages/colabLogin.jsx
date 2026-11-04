@@ -130,9 +130,11 @@ function ColabLogin() {
                         </Link>
                         </div>
             
+                         <Link to="/selecaoCurso" >
                         <button type="submit" className={Style.acessarPlataforma}>
-                        Acessar Plataforma &rarr;
+                            Acessar Plataforma &rarr;
                         </button>
+                        </Link>
                     </form>
                     </div>
                 </section>
