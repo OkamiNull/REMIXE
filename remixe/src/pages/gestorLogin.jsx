@@ -148,9 +148,11 @@ function GestorLogin() {
                 <span className={Style.badgeVerdeClaro}>MFA Enforced</span>
               </div>
 
-              <button type="submit" className={Style.botaoEntrar}>
-                Entrar no Painel do Gestor →
-              </button>
+              <Link to="/creator" >
+                <button type="submit" className={Style.botaoEntrar}>
+                  Entrar no Painel do Gestor →
+                </button>
+              </Link>
             </form>
 
             <div className={Style.loginRodapeLinks}>
